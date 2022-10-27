@@ -78,6 +78,7 @@ li{
     max-width: 1200px;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
     margin-bottom: 60px;
 }
 .divele{
@@ -240,3 +241,33 @@ border-radius:5%;}
 strong{
     font-size: xx-large;
 }
+.boton_1{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 100;
+    font-size: 1em;
+    font-style: italic;
+    color: #FFF;
+    background-color: #00d4ff;
+    border-radius: 15px;
+    border: 3px double #00d4ff;
+    align-items: center;
+    position: relative;}
+  .boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+  .boton_2{
+      text-decoration: none;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+  
