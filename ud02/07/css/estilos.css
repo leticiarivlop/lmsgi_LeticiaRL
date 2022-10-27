@@ -1,0 +1,179 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 nov. 2021, 11:42:50
+    Author     : daw1
+*/
+@font-face{
+    font-family: 'Estonia';
+    src: url('../font/Estonia-Regular.ttf');
+}
+@font-face{
+    font-family: 'ComforterBrush';
+    src: url('../font/ComforterBrush-Regular.ttf');
+}
+.logo-1{
+    font-family: 'Estonia';
+    font-size: 140px;
+    color: cornflowerblue;
+    text-decoration:none;
+}
+.logo-1 span{
+    font-family: 'ComforterBrush', cursive;
+    font-size: 140px;
+    color: yellowgreen;
+    text-decoration:none;
+}
+figure{
+     margin-top: 10px;
+    margin-bottom: 10px;
+}
+figure a{
+    padding-left:50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+.logo-2{
+    font-family: 'ComforterBrush', cursive;
+    font-size: 50px;
+    color: cornflowerblue;
+    text-decoration:none;
+}
+.logo-2 span{
+    font-family: 'ComforterBrush', cursive;
+    font-size: 50px;
+    color: yellowgreen;
+    text-decoration:none;
+}
+.logo-3{
+    font-family: 'Estonia', cursive;
+    font-size: 50px;
+    color: cornflowerblue;
+    text-decoration:none;
+}
+.logo-3 span{
+    font-family: 'Estonia', cursive;
+    font-size: 50px;
+    color: yellowgreen;
+    text-decoration:none;
+}
+.logo-4{
+    font-family: 'ComforterBrush', cursive;
+    font-size: 50px;
+    color: cornflowerblue;
+    text-decoration:none;
+}
+.logo-4 span{
+    font-family: 'ComforterBrush', cursive;
+    font-size: 50px;
+    color: yellowgreen;
+    text-decoration:none;
+}.logo-1{
+    font-family: 'Estonia', cursive;
+    font-size: 50px;
+    color: cornflowerblue;
+    text-decoration:none;
+}
+.logo-1 span{
+    font-family: 'Estonia', sans-serif;
+    font-size: 50px;
+    color: yellowgreen;
+    text-decoration:none;
+    text-decoration:none;
+}
+.logo-2{
+    font-family: 'ComforterBrush', cursive;
+    font-size: 50px;
+    color: cornflowerblue;
+    text-decoration:none;
+}
+.logo-2 span{
+    font-family: 'ComforterBrush', cursive;
+    font-size: 50px;
+    color: yellowgreen;
+    text-decoration:none;
+    text-decoration:none;
+}
+.logo-3{
+    font-family: 'Estonia', cursive;
+    font-size: 50px;
+    color: cornflowerblue;
+    text-decoration:none;
+}
+.logo-3 span{
+    font-family: 'Estonia', cursive;
+    font-size: 50px;
+    color: yellowgreen;
+    text-decoration:none;
+}
+.logo-4{
+    font-family: 'ComforterBrush', cursive;
+    font-size: 50px;
+    color: cornflowerblue;
+    text-decoration:none;
+    text-decoration:none;
+}
+.logo-4 span{
+    font-family: 'ComforterBrush', cursive;
+    font-size: 50px;
+    color: yellowgreen;
+    text-decoration:none;
+    text-decoration:none;
+}
+.content{
+    width: 100%;
+    max-width: 600px;
+    padding: 25px 50px 10px 50px;
+    border-top: dashed red 1px;
+    border-bottom: dashed green 1px;
+    border-left: dotted orange 1px;
+    border-right: dotted red 1px;
+    margin:0px auto;
+}
+.content div{
+    width: 30%;
+    max-width: 300px;
+    padding: 25px 10px;
+    border: red 2px solid;
+    margin: 40px 0;
+    background-color: rgb(115, 135, 250);
+}
+.content div:nth-child(2n+1){
+    margin:0px auto;
+    text-align: left;
+}
+.content div:nth-child(2n){
+    text-align: center;
+}
+div div:nth-child(1){
+    font-family: 'Verdana',sans-serif;
+}
+div div:nth-child(2){
+    font-family: 'Didot',serif;
+}
+div div:nth-child(3){
+    font-family: 'Freemono', monospace;
+}
+div div:nth-child(4){
+    font-family: 'Roboto', sans-serif;
+    
+}@font-face{
+    font-family: 'Akronim';
+    src: url('../font/Akronim-Regular.ttf');
+}
+div div:nth-child(5){
+    font-family: 'Akronim', cursive;
+    font-size: 24px;
+}
+div div:nth-child(6){
+    font-family: 'Montserrat', sans-serif ;
+}
+footer p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

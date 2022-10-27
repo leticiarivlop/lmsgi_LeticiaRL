@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+XML01.- Escribir un documento XML que almacene la información de un mail y contenga la siguiente información: 
+remitente, destinatario(s), fecha del mensaje, asunto, mensaje, ficheros adjuntos (por cada fichero debe especificar el 
+nombre y el tipo MIME). No utilizar atributos.
+-->
+ <!DOCTYPE email [
+                <!ELEMENT email (remitente,destinatario+,fecha,asunto,mensaje?,fichero+)>
+                <!ATTLIST email
+                          xmlns:xsi CDATA #IMPLIED
+                          xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+                <!ELEMENT remitente (#PCDATA)>
+                <!ELEMENT destinatario (#PCDATA)>
+                <!ELEMENT fecha (#PCDATA)>
+                <!ELEMENT asunto (#PCDATA)>
+                <!ELEMENT mensaje (#PCDATA)>
+                <!ELEMENT fichero (nombre,tipo)>
+                <!ELEMENT nombre (#PCDATA)>
+                <!ELEMENT tipo (#PCDATA)>       
+]>
+
+<email     
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='01.xsd'>
+    <remitente>
+        leticia.rivlop@educa.jcyl.es
+    </remitente>
+    <destinatario>
+        victor@educa.jcyl.es
+    </destinatario>
+    <destinatario>
+        david@educa.jcyl.es
+    </destinatario>
+    <destinatario>
+        ricardo@educa.jcyl.es
+    </destinatario>
+    <destinatario>
+        manuel@educa.jcyl.es
+    </destinatario>
+    <fecha>2022-10-03</fecha>
+    <asunto>Fiesta fin de curso</asunto>
+    <mensaje>Lugar de la fiesta:Benavente 20:00</mensaje>
+    <fichero>
+        <nombre>foto1.jpg</nombre>
+        <tipo>image/jpeg</tipo>
+    </fichero>
+    <fichero>
+        <nombre>foto2.jpg</nombre>
+        <tipo>image/jpeg</tipo>
+    </fichero>
+</email>

@@ -1,0 +1,242 @@
+html{
+	height:100%;
+}
+*{
+	box-sizing:border-box;
+}
+h1{
+    font-size: 32px;
+    text-align:center;
+}
+h2{font-size: 32px;
+   text-align:center;
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+height:100%;
+}	
+li{
+    display: inline;
+    text-align: center;
+    margin: 5px 10px 0 0; 
+}
+.imagen {
+    float: left;
+}
+#encabezado{
+    background-color:#055eb1;
+    color: white;
+    font-size: 10px;
+    padding-bottom: 50px;
+    padding-top: 2px;
+	max-height:150px;
+}
+#encabezado1{
+    color: black;
+}
+/*#navegacion{
+    background-color: #055eb1;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    text-align: center;
+
+}
+#navegacion a{
+    list-style-type: none;
+    text-decoration: none;
+}*/
+.topmenu {
+    background-color: azure;
+    padding: 20px;
+    font-size: 20px;
+}
+.topmenu .active{
+    text-decoration: 3px underline red;
+    text-underline-offset: 20%;
+}
+.topmenu .news:before{
+    content:"\f1ea";
+    font-family:font-awesome;
+    padding:5px;
+}
+.topmenu .contact:before{
+    content:"\f007";
+    font-family:font-awesome;
+    padding:5px;
+}
+.topmenu .about:before{
+    content:"\f128";
+    font-family:font-awesome;
+    padding:5px;
+}
+.divcont{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.divele{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00d4ff;
+    margin:20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    max-width: 350px;
+}
+a{
+    margin: 10px;
+}
+.imagen{
+    height: 75%;
+    width: 100%;
+}
+footer {
+    text-align: center;
+    background-color: #055eb1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+footer p{
+    padding-bottom: 10px;
+}
+.imagen1{
+    width: 40px;
+    float: right;
+}
+.imagen1 a{
+border-radius:5%;}
+.imagen2{
+    width: 40px;
+    float: left;
+    top:10px;
+}
+.imagen3{
+    width: 160px;
+    height: 160px;
+    margin: 5px;
+}
+#imagen{
+    
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.navbar {
+    overflow: hidden;
+    font-family: Arial;
+    width: 100%;
+}
+/* enlaces en la barra de navegación */
+.navbar a {
+    float: left;
+    font-size: 1em;
+    color: #003333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.desplegable {
+    float: left;
+    overflow: hidden;
+    min-height: 18em;
+}
+.desplegable .botonDesplegable {
+    font-size: 6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #003333;
+    font: inherit;
+    margin: 0;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #49ff18, 0 0 50px #49ff18, 0 0 60px #49ff18, 0 0 70px #49ff18;
+    }
+    to {
+        text-shadow: 0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #FFF, 0 0 50px #49ff18, 0 0 60px #49ff18, 0 0 70px #49ff18, 0 0 80px #49ff18;
+    }
+}
+.navbar a:hover, .desplegable:hover .botonDesplegable:hover{
+    background-color: #055eb1;
+}
+.iconoDesplegable:before {
+    content: "\f0d7";
+    display: inline-block;
+    font: normal normal normal 2em FontAwesome;
+    margin-left: 0.5em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* Contenido desplegable oculto por defecto */
+.contenidoDesplegable {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-height: 18em;
+}
+.tituloDesplegable{font-size: 1.5em}
+.contenidoDesplegable .tituloDesplegable {
+    background: #055eb1;
+    padding: 16px;
+    color: white;
+}
+.desplegable:hover .contenidoDesplegable {
+    display: block;
+}
+.columna {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    background-color: #ccc;
+    height: 250px;
+    font-weight: bolder;
+}
+.columna h3{color:#999999}
+.columna a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.columna a:hover {
+    background-color: #ddd;
+}
+.columnas:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.botonDesplegable{
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    font-size: 1em;
+    height: 3em;
+    padding: 0.5em;
+}
+strong{
+    font-size: xx-large;
+}

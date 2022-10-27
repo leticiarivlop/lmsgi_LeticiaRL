@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+   Descripcion: duodecimo ejercicio
+   Autor: Leticia Rivera
+   Fecha creacion/modificacion: 06/12/2021
+-->
+<html lang="es">
+   <head>
+     <title>Exa 01 Leticia Rivera López</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index,follow">
+	    <meta name="description" content="Prototipo">
+	    <meta name="keywords" content="HTML, CSS,">
+	    <meta name="author" content="Leticia Rivera López">
+	    <meta http-equiv="refresh" content="300">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/png" href="../../images/favicon-32x32.png">
+		<style>
+      </style>
+	</head>
+   <body>
+       <header>
+          <h1><a href="index.html">NEFLIX</a></h1>
+          <button class="inicio" role="link" onclick="window.location='form-inicio.html'">Inicio</button>
+      </header>
+      <main>
+         <div>            
+            <p id="texto1">Todas las peliculas y series que desees, y mucho más.</p>
+            <p id="texto2">Disfruta donde quieras. Cancela cuando quieras</p>
+            <form action="../altaNeflix.php" method="get" id="formulario">
+             <input type="email" id="email" placeholder="Correo electronico" size="32">
+             <input type="submit" id="comenzar" value="Empezar">
+           </form>
+         </div> 
+   </main>
+   </body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "Usuario1": [
+    {
+    "ColordeFondo": "Azul",
+    "Tamañodetexto": "20px",
+    "Colordetexto": "negro",
+    "Idioma": "Español",
+    "pantalladeinicio": "Galeria"
+    }
+    
+    ],
+    "Usuario2": [
+    {
+    "ColordeFondo": "Blanco",
+    "Tamañodetexto": "12px",
+    "Colordetexto": "negro",
+    "Idioma": "Español",
+    "pantalladeinicio": "Navegador"
+    }
+    ]
+        
+}

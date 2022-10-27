@@ -1,0 +1,120 @@
+/* 
+    Created on : 
+    File        : estilo.css
+    Description : 
+*/
+@font-face{
+    font-family: 'Goldman';
+    src: url('../font/Goldman-Regular.ttf');
+}
+body{
+    width: 1024px;
+    margin-right: 300px;
+    margin-left: 200px;
+    background-image: url('../images/Le_petit_prince.png');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: 84% 2%;
+}
+header h1{
+    text-align: center;
+    font-family: 'Goldman',cursive;
+    color:#3F674Aff;
+    text-decoration: underline wavy red;
+}
+footer p{
+    text-align: center;
+}
+main p{
+    background-color: #95BF9B;
+    font-size: 1em;
+    color: white;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    padding-left: 0.15em;
+    font-style: italic;
+    }
+p span{
+    color: #730202;
+    height: 100px;
+    width: 75%;
+}
+.lista1 li,.lista2 li,.lista3 li{
+    border-left:2px dotted #ff2003;
+    border-right: 2px dotted #ff2003;
+    border-top: 2px dotted #ff2003; 
+}
+
+.lista1 li{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+.lista1 li:last-child{
+    border-bottom: 2px dotted #ff2003;
+}
+.lista2{
+    list-style-type: square;
+    list-style-position: outside; 
+}
+.lista2 li:last-child{
+    border-bottom: 2px dotted #ff2003;
+}
+.lista3{
+    list-style:square inside
+    url("../images/sqpurple.png")
+}
+.lista3 li:last-child{
+    border-bottom: 2px dotted #ff2003;
+}
+ol {
+    background: #730202;
+    padding: 20px;
+  }
+  ol li {
+    background:#ff2003 ;
+    padding: 5px;
+  }
+  .lista4 li{
+  list-style-type: none;
+  list-style-position: inside;
+  border: 1.5px #730202 dotted;
+  font-size: 1em;
+  background: #eb5d4a;
+   margin: 5px 0 5px 0;
+   color:rgb(83, 2, 2);
+  }
+  .lista4 li::before{
+    content:'#';
+    color:#ff2003;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  .lista5 li{
+    list-style: none;
+    border-left: 7px rgb(83, 2, 2) solid;
+    font-size: 1em;
+    background: #eb5d4a;
+    color:rgb(83, 2, 2);
+    margin-left: -2em;
+    padding-left: 5px;
+  }
+  .lista6 li{
+    list-style-position: outside; 
+    border-left:5px dotted #ff2003;
+    border-right: 5px dotted #ff2003;
+    border-top: 5px dotted #ff2003;  
+    font-size: 1em;   
+    margin-left: -2em;
+    padding-left: 5px;
+  }
+.lista6 li:last-child{
+    border-bottom: 5px dotted #ff2003;
+}
+hr{
+    border-color: red;
+    border-style: solid;
+    height: 5px;
+    background-color: red;
+    width: 75%;
+}

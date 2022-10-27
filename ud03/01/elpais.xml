@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<rss version="2.0">
+    <channel>
+        <title>El pais-Ultimas Noticias</title>
+        <link>https://elpais.com</link>
+        <description>Es un periodico digital con las novedades  Nacionales,internacionales y locales</description>
+        <copyright>Derechos de autor </copyright>
+        <item>
+            <title>Djokovic, en el cuadro del Abierto de Australia a la espera de la decisión sobre su posible deportación</title>
+            <link>https://elpais.com/deportes/2022-01-13/djokovic-en-el-cuadro-del-open-de-australia-a-la-espera-de-la-decision-sobre-su-posible-deportacion.html</link>
+            <description>El Ministerio de Inmigración, que investiga las irregularidades en la declaración de entrada del tenista serbio, vuelve a posponer la resolución sobre una hipotética expulsión del país</description>
+            <guid isPermaLink="true">https://elpais.com/deportes/2022-01-13/djokovic-en-el-cuadro-del-open-de-australia-a-la-espera-de-la-decision-sobre-su-posible-deportacion.html</guid>
+        </item>
+        <item>
+            <title>Rigoberto Urán: “La felicidad no solo está en ganar”</title>
+            <link>https://elpais.com/deportes/2021-12-26/rigoberto-uran-la-felicidad-no-solo-esta-en-ganar.html</link>
+            <description>El ciclista colombiano, un showman gane o pierda, se ha tomado muy serio su faceta de hombre de negocios</description>
+            <guid isPermaLink="true">https://elpais.com/deportes/2021-12-26/rigoberto-uran-la-felicidad-no-solo-esta-en-ganar.html</guid>
+        </item>
+    </channel> 
+</rss>

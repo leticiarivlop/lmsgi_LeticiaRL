@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE prediccion [
+                <!ELEMENT prediccion (municipio,dia+)>
+                <!ATTLIST prediccion
+                          xmlns:xsi CDATA #IMPLIED
+                          xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+                <!ELEMENT municipio (nombre,provincia)>
+                <!ATTLIST municipio id ID #REQUIRED>
+                <!ELEMENT nombre (#PCDATA)>
+                <!ELEMENT provincia (#PCDATA)>
+                <!ELEMENT dia (prob_precipitacion,estado_cielo,viento,temperatura)>
+                <!ATTLIST dia fecha CDATA #REQUIRED>
+                <!ELEMENT prob_precipitacion (#PCDATA)>
+                <!ELEMENT estado_cielo (#PCDATA)>
+                <!ATTLIST estado_cielo descripcion CDATA #REQUIRED>
+                <!ELEMENT viento (direccion,velocidad)>
+                <!ELEMENT direccion (#PCDATA)>
+                <!ELEMENT velocidad (#PCDATA)>
+                <!ELEMENT temperatura (minimo,maximo)>
+                <!ELEMENT minimo (#PCDATA)>
+                <!ELEMENT maximo (#PCDATA)>
+]>
+
+<prediccion xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='10.xsd'>
+    <municipio id="Benavente">
+        <nombre>Benavente</nombre>
+        <provincia>Zamora</provincia>
+    </municipio>
+    <dia fecha="2022-01-15">
+        <prob_precipitacion>10</prob_precipitacion>
+        <estado_cielo descripcion="Despejado">1</estado_cielo>
+        <viento>
+            <direccion>Norte</direccion>
+            <velocidad>200</velocidad>
+        </viento>
+        <temperatura>
+            <minimo>-3</minimo>
+            <maximo>10</maximo>
+        </temperatura>
+    </dia>
+    <dia fecha="2022-01-16">
+        <prob_precipitacion>20</prob_precipitacion>
+        <estado_cielo descripcion="Despejado">1</estado_cielo>
+        <viento>
+            <direccion>Sur</direccion>
+            <velocidad>100</velocidad>
+        </viento>
+        <temperatura>
+            <minimo>2</minimo>
+            <maximo>18</maximo>
+        </temperatura>
+    </dia>
+    <dia fecha="2022-01-17">
+        <prob_precipitacion>15</prob_precipitacion>
+   <estado_cielo descripcion="Despejado">1</estado_cielo>
+        <viento>
+            <direccion>Oeste</direccion>
+            <velocidad>150</velocidad>
+        </viento>
+        <temperatura>
+            <minimo>-4</minimo>
+            <maximo>2</maximo>
+        </temperatura>
+    </dia>
+    <dia fecha="2022-01-18">
+        <prob_precipitacion>24</prob_precipitacion>
+      <estado_cielo descripcion="Despejado">1</estado_cielo>
+        <viento>
+            <direccion>Noroestee</direccion>
+            <velocidad>125</velocidad>
+        </viento>
+        <temperatura>
+            <minimo>-1</minimo>
+            <maximo>5</maximo>
+        </temperatura>
+    </dia>
+    <dia fecha="2022-01-19">
+        <prob_precipitacion>56</prob_precipitacion>
+        <estado_cielo descripcion="Despejado">1</estado_cielo>
+        <viento>
+            <direccion>Suroeste</direccion>
+            <velocidad>120</velocidad>
+        </viento>
+        <temperatura>
+            <minimo>-6</minimo>
+            <maximo>0</maximo>
+        </temperatura>
+    </dia>
+    <dia fecha="2022-01-20">
+        <prob_precipitacion>0</prob_precipitacion>
+       <estado_cielo descripcion="Despejado">1</estado_cielo>
+        <viento>
+            <direccion>Este</direccion>
+            <velocidad>100</velocidad>
+        </viento>
+        <temperatura>
+            <minimo>0</minimo>
+            <maximo>10</maximo>
+        </temperatura>
+    </dia>
+    <dia fecha="2022-01-21">
+        <prob_precipitacion>0</prob_precipitacion>
+        <estado_cielo descripcion="Despejado">1</estado_cielo>
+        <viento>
+            <direccion>Norte</direccion>
+            <velocidad>50</velocidad>
+        </viento>
+        <temperatura>
+            <minimo>5</minimo>
+            <maximo>18</maximo>
+        </temperatura>
+    </dia>
+</prediccion>

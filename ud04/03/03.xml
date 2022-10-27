@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Escribir un documento XML que almacene la siguiente información: HECHOS HISTÓRICOS
+-->
+<!DOCTYPE historial [
+                <!ELEMENT historial (fila+)>
+                <!ATTLIST historial
+                          xmlns:xsi CDATA #IMPLIED
+                          xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+                <!ELEMENT fila (descripcion,fecha)>
+                <!ELEMENT descripcion (#PCDATA)>
+                <!ELEMENT fecha (dia,mes,anyo)>
+                <!ELEMENT dia (#PCDATA)>
+                <!ELEMENT mes (#PCDATA)>
+                <!ELEMENT anyo (#PCDATA)>
+]>
+<historial xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+           xsi:noNamespaceSchemaLocation='03.xsd'>
+
+    <fila>
+        <descripcion> Se funda Youtube</descripcion>
+        <fecha>
+            <dia>15</dia>
+            <mes>2</mes>
+            <anyo>2005</anyo>
+        </fecha>
+    </fila>
+    <fila>
+        <descripcion>Se funda Google</descripcion>
+        <fecha>
+            <dia> 4 </dia>
+            <mes>9</mes>
+            <anyo>1998</anyo>
+        </fecha>
+    </fila>
+    <fila>
+        <descripcion> Se funda Facebook </descripcion>
+        <fecha>
+            <dia> 4 </dia>
+            <mes>2 </mes>
+            <anyo>2004</anyo>
+        </fecha>
+    </fila>
+</historial>

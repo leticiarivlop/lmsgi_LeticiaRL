@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE curriculum [
+                <!ELEMENT curriculum (nombre,apellido,anyonac,residencia,datos)>
+                <!ATTLIST curriculum
+                          xmlns:xsi CDATA #IMPLIED
+                          xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+                <!ELEMENT nombre (#PCDATA)>
+                <!ELEMENT apellido (#PCDATA)>
+                <!ELEMENT anyonac (#PCDATA)>
+                <!ELEMENT residencia (ciudad,pais)>
+                <!ELEMENT ciudad (#PCDATA)>
+                <!ELEMENT pais (#PCDATA)>
+                <!ELEMENT datos (tel,email,perfil+,descripcion,competencias+,formaciones?,experiencias+)>
+                <!ELEMENT tel (#PCDATA)>
+                <!ELEMENT email (#PCDATA)>
+                <!ELEMENT perfil (#PCDATA)>
+                <!ELEMENT descripcion (#PCDATA)>
+                <!ELEMENT competencias (competencia+)>
+                <!ELEMENT competencia EMPTY>
+                <!ATTLIST competencia nombre CDATA #REQUIRED 
+                                      nivel  (bajo|medio|alto) "medio" >
+                <!ELEMENT formaciones (formacion+)>
+                <!ELEMENT formacion EMPTY>
+                <!ATTLIST formacion titulo CDATA #IMPLIED
+                                    centro CDATA #IMPLIED
+                                    anyo CDATA #IMPLIED>
+                <!ELEMENT experiencias (experiencia*)>
+                <!ELEMENT experiencia (puesto,empresa,anyoini,anyofin?)>
+                <!ELEMENT puesto (#PCDATA)>
+                <!ELEMENT empresa (#PCDATA)>
+                <!ELEMENT anyoini (#PCDATA)>
+                <!ELEMENT anyofin (#PCDATA)>
+]>
+
+<curriculum xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+            xsi:noNamespaceSchemaLocation='04.xsd'>
+    <nombre>Leticia</nombre>
+    <apellido>Rivera López</apellido>
+    <anyonac>2001</anyonac>
+    <residencia>
+        <ciudad>Benavente</ciudad>
+        <pais>España</pais>
+    </residencia>
+    <datos>
+        <tel>555444333</tel>
+        <email>leticia.rivlop@educa.jcyl.es</email>
+        <perfil>alumno</perfil>
+        <descripcion>alumno</descripcion>
+        <competencias>
+            <competencia nombre="mysql" nivel="medio"></competencia>
+        </competencias>
+        <formaciones> 
+            <formacion titulo="grado medio" centro="IES Los Sauces" anyo="2021"></formacion>
+        </formaciones>
+        <experiencias>
+            <experiencia>
+                <puesto>Tecnico informatico</puesto>
+                <empresa>IPHONETICS S.L REACONDICIONADOS</empresa>
+                <anyoini>2021</anyoini>
+                <anyofin>2022</anyofin>
+            </experiencia>
+        </experiencias>
+    </datos>
+</curriculum>

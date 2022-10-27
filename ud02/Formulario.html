@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+   Descripcion: Prueba ejercicio Formulario 4
+   Autor: Leticia Rivera
+   Fecha creacion/modificacion: 28/10/2021
+-->
+<html lang="es">
+   <head>
+     <meta charset="utf-8"/>
+	<title>Trabajando con Formulario</title>
+	</head>
+   <body>
+		<form action="alta.php" method="GET">
+			<fieldset>
+				<legend>Informacion Personal</legend>
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" placeholder="Escribe tu nombre" id="nombre"/>
+				<label for="apellidos">Apellidos:</label>
+				<input type="text" name="Apellidos" placeholder="Escribe tus Apellidos" id="apellidos"/>
+			</fieldset>
+			<fieldset>
+				<legend>_Genero</legend>
+				<p><label for="idM"><input type="radio" name="genero" id="idM" value="M">Masculino</label></p>
+				<p><label for="idF"><input type="radio" name="genero" id="idF" value="F">Femenino</label></p>
+				<p><label for="idO"><input type="radio" name="genero" id="idO" value="O">Otro</label></p>
+			</fieldset>
+			<fieldset>
+				<legend>Tipo de pizza</legend>
+				<p><label for="id1"><input type="checkbox" name="1" id="id1" value="B">Bacon</label></p>
+				<p><label for="id2"><input type="checkbox" name="2" id="id2" value="Q">Queso</label></p>
+				<p><label for="id3"><input type="checkbox" name="3" id="id3" value="C">Champiñones</label></p>
+				<p><label for="id4"><input type="checkbox" name="4" id="id4" value="JY">Jamon York</label></p>
+			</fieldset>
+			<fieldset>
+				<p><label for="idfecha">Fecha:</label><input type="date" name="fecha" id="idfecha" value="f" step="10"></p>
+			</fieldset>
+			<fieldset>
+				<p><label for="idhora">Hora:</label><input type="time" name="hora" id="idhora" value="08:30" min="08:30" max="20:00" step="50"</p>
+			</fieldset>
+			<fieldset>
+				<p><label for="idedad">Edad<input id="idedad" name="rango" type="range" min="1" max="40"></label></p>
+			</fieldset>
+			<div>
+			<label for="empresa">Selecciona tu empresa</label><br>
+			<select multiple name="Empresa" id="empresa">
+			<option value="Tele_Pizza">Tele_Pizza</option>
+			<option value="Amazon">Amazon</option>
+			<option value="Seat">Seat</option>
+			<option value="Pcomponentes">Pcomponentes</option>
+			</select>
+			</div>
+			<div>
+			<label for="Observaciones">Observaciones</label><br>
+			<textarea name="Observaciones" id="Observaciones" rows="20" cols="40" placeholder="Escribe aqui..."></textarea>
+			</div>
+			<fieldset>
+				<label for="navegador">Selecciona Navegador</label>
+				  <input list="browsers" name="browser" id="navegador">
+				<datalist id="browsers">
+				  <option value="Edge">
+				  <option value="Firefox">
+				  <option value="Chrome">
+				  <option value="Opera">
+				  <option value="Safari">
+				</datalist>
+			</fieldset>
+			<fieldset>
+			 <label for="phone">Enter a phone number:</label><br><br>
+			<input type="tel" id="phone" name="phone" placeholder="123-456-678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
+			<small>Format: 123-456-678</small><br><br>
+			</fieldset>
+			<fieldset>
+				<input type="image" src="images\enviar.jfif" alt="Submit" width="50" height="50">
+			</fieldset>
+		</form>
+   </body>
+</html>
+

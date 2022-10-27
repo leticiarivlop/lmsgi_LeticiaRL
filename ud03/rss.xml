@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<rss version="2.0">
+    <channel>
+        <title>Leticia Rivera López</title>
+        <link>https://daw104.ieslossauces.es</link>
+        <description>Actualizaciones que hemos realizado de nuestra pagina web</description>
+        <copyright>Derechos de autor:Leticia Rivera López </copyright>
+		<language>Es-es</language>
+		<day>Sabado</day>
+		<day>Domingo</day>
+        <item>
+            <title>Actualizaciones</title>
+            <link>https://daw104.ieslossauces.es/index.html</link>
+            <description>Actualizaciones de la pagina web</description>
+            <guid isPermaLink="true"></guid>
+			<author>leticia.rivlop@educa.jcyl.es</author>
+        </item>
+    </channel> 
+</rss>

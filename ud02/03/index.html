@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--
+   Descripcion: Tercer Ejercicio 
+   Autor: Leticia Rivera
+   Fecha creacion/modificacion: 03/11/2021
+-->
+<html lang="es">
+   <head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=devide-width, initial-scale=1.0">
+		<meta name="robots" content="index,follow">
+		<meta name="description" content="Formulario">
+		<meta name="keywords" content="HTML, CSS,">
+		<meta name="author" content="Leticia Rivera López">
+		<meta http-equiv="refresh" content="30">
+		<title>HTML03 Leticia Rivera López</title>
+		<style>
+			body{
+				color:black;
+				font-family:sans-serif;
+				font-style:italic;
+				background:linear-gradient(to left,#81BEF7 20%,cyan 60%,#A9F5F2 100%);}	
+			label{
+				font-family: Times New Roman;}
+			.Hola{
+				text-align:right;
+				width:15%;
+				position:relative;
+				left: 80%;
+				background-color:#055eb1;}
+			.color{
+				background-color:#0559b1;}
+			.color1{
+				background-color:#00d4ff;}
+			#centrado{
+				text-align:center;
+				line-height: 100%;
+				font-family:cursive;
+				font-size:35px;}
+		    .fin{
+				background-color:#0559b1;;
+				text-align:center;}
+			.form {
+				 width: 100%;
+				 justify-content: center;
+				 align-items: center;}
+		</style>
+		<link rel="icon" type="image/png" href="../../images/favicon-32x32.png">
+	</head>
+   <body>
+		<h2 id="centrado">FORMULARIO SOBRE LA MUSICA</h2>
+		<form class="form" action="#" method="POST">
+			<fieldset class="Hola">
+				<label for="username">Usuario:</label><br>
+				<input type="text" id="username" name="username" ><br>
+				<label for="pwd">Contraseña:</label><br>
+				<input type="password" id="pwd" name="pwd">
+			</fieldset>
+			<fieldset class="color1">
+				<legend>Información Personal</legend>
+				<label id="nombre">Nombre:</label>
+				<input type="text" name="Nombre" placeholder="Escribe tu nombre" minlength="4" id="Idnombre" size="20" maxlength="20" pattern="[A-Za-z]" required>
+				<label for="apellidos">Apellidos:</label>
+				<input type="text" name="Apellidos" placeholder="Escribe tus Apellidos" id="apellidos" minlength="4" size="20" maxlength="20" pattern="[A-Za-z]" required>
+			</fieldset>
+			<br>
+			<fieldset class="color">
+				<legend>Genero Musical favorito</legend>
+				<p><label for="idP"><input type="radio" name="generomusical" id="idP" value="P">POP</label></p>
+				<p><label for="idR"><input type="radio" name="generomusical" id="idR" value="R">ROCK and ROLL</label></p>
+				<p><label for="idF"><input type="radio" name="generomusical" id="idF" value="F" checked>FLAMENCO</label></p>
+				<p><label for="idJ"><input type="radio" name="generomusical" id="idJ" value="J">JAZZ</label></p>
+				<p><label for="idM"><input type="radio" name="generomusical" id="idM" value="M">METAL</label></p>
+				<p><label for="idT"><input type="radio" name="generomusical" id="idT" value="F">TECHNO</label></p>
+			</fieldset>
+			<br><br>
+			<fieldset class="color1">
+				<legend>Tipos de canciones favorita</legend>
+				<p><label for="id1"><input type="checkbox" name="1" id="id1" value="L" checked>Canto lírico</label></p>
+				<p><label for="id2"><input type="checkbox" name="2" id="id2" value="F">Canto folclórico</label></p>
+				<p><label for="id3"><input type="checkbox" name="3" id="id3" value="P">Canción popular</label></p>
+				<p><label for="id4"><input type="checkbox" name="4" id="id4" value="In">Canción infantil</label></p>
+			</fieldset>
+			<br>
+			<div class="color">
+				<label> Correo Electronico: </label><input type="email" name=" Correo Electronico" value="" placeholder="Escriba el Correo Electronico" size="30" minlength="5" maxlength="30" >
+			</div>
+			<br>
+			<fieldset class="color1">
+				<label for="phone">Introduce tu numero de telefono:</label><br><br>
+				<input type="tel" id="phone" name="phone" placeholder="123-456-678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
+				<small>Formato: 123-456-678</small><br><br>
+			</fieldset>
+			<br>
+			<fieldset class="color">
+				<p><label for="idfecha">Fecha:</label><input type="date" name="fecha"  id="idfecha" value="2021-01-01" step="10" min="2021-11-01" max="2022-01-01"></p>
+			</fieldset>
+			<br>
+			<fieldset class="color1">
+				<p><label for="idhora">Hora:</label><input type="time" name="hora" id="idhora" value="08:30" min="08:30" max="20:00" step="50" ></p>
+			</fieldset>
+			<br>
+			<fieldset class="color">
+				<label for="week">Selecciona la semana de inicio:</label><input type="week" id="week" name="week">
+			</fieldset>
+			<br>
+			<fieldset class="color1">
+				<label for="bdaymonth">salida del disco:</label><input type="month" id="bdaymonth" name="bdaymonth">
+			</fieldset>
+			<br>
+			<fieldset class="color">
+				<p><label for="idedad">Edad<input id="idedad" name="rango" type="range" min="1" max="40"></label></p>
+			</fieldset>
+			<br>
+			<div class="color1">
+				<label for="artistas">Elige a tu artista favorito:</label><br>
+				<select multiple name="artistas" id="artistas">
+					<option value="El Barrio">El Barrio</option>
+					<option value="Melendi">Melendi</option>
+					<option value="Alejandro Sanz">Alejandro Sanz</option>
+					<option value="Pablo Alboran">Pablo Alboran</option>
+					<option value="Rosario Flores">Rosario Flores</option>
+					<option value="El Fari">EL Fari</option>
+					<option value="Malu">Malu</option>
+					<option value="Rauw Alejandro">Rauw Alejandro</option>
+				</select>
+			</div>
+			<br>
+			<fieldset class="color">
+				<label for="discos">discos disponibles</label>
+				  <input list="browsers" name="browser" id="discos">
+				<datalist id="browsers">
+				  <option value="Cada vez cadáver Fito&Fitipaldis">
+				  <option value="Viceversa Rauw Alejandro">
+				  <option value="Happier Than Ever de Billie Eilish">
+				  <option value="Hijo del Levante El Barrio">
+				  <option value="Ahora Melendi">
+				</datalist>
+			</fieldset>
+			<br>
+			<fieldset class="color1">
+				<label for="fname">Nombres de tu cancion favorita:</label><input type="text" id="fname" name="fname"><br><br><input type="hidden" id="custId" name="custId" value="3487">
+			</fieldset>
+			<br>
+			<fieldset class="color">
+				<label for="favcolor">Seleciona tu color favorito:</label>
+				<input type="color" id="favcolor" name="favcolor">
+			</fieldset>
+			<br>
+			<fieldset class="color1">
+				<label for="gsearch">busca tu artista favorito en Google:</label>
+				<input type="search" id="gsearch" name="gsearch">
+			</fieldset>
+			<br>
+			<fieldset class="color">
+				<label for="homepage">Mi pagina web de tu cantante favorito</label>
+				<input type="url" id="homepage" name="homepage">
+			</fieldset>
+			<br>
+			<fieldset class="color1">
+				<label for="myfile">Selecciona el archivo de tu cancion favorita:</label>
+				<input type="file" id="myfile" name="myfile">
+			</fieldset>
+			<br>
+			<fieldset class="color">
+				<label for="quantity">Puntuacion (entre 1 and 10):</label>
+				<input type="number" id="quantity" name="quantity" min="1" max="10">
+			</fieldset>
+			<br>
+			<div class="color1">
+				<label for="Observaciones">Observaciones</label><br>
+				<textarea name="Observaciones" id="Observaciones" rows="10" cols="40" placeholder="Escribe aqui..."></textarea>
+			</div>
+			<br>
+			<fieldset class="fin">
+				<input type="image" src="images/enviar.png" alt="Enviar" width="80" height="28"/>
+				<input type="reset">
+			</fieldset>
+		</form>
+   </body>
+</html>

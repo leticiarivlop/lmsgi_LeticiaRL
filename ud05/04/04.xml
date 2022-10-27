@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE mapaestelar [
+                <!ELEMENT mapaestelar (constelacion,estrella)+>
+                <!ATTLIST mapaestelar
+                          xmlns:xsi CDATA #IMPLIED
+                          xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+                <!ELEMENT constelacion (#PCDATA|nombre|superficie|estrellas|objetos|colindantes|observacion)*>
+               <!ATTLIST constelacion
+                            nombreLatin CDATA #IMPLIED>
+                <!ELEMENT nombre (#PCDATA)>
+                <!ELEMENT superficie (#PCDATA)>
+                <!ELEMENT estrellas (asterismo,masBrillante)>
+                <!ATTLIST estrellas
+                            num CDATA #REQUIRED>
+                <!ELEMENT asterismo (#PCDATA)>
+                <!ELEMENT masBrillante (nombreEstrella)*>
+                <!ATTLIST masBrillante
+                            luminosidad CDATA #IMPLIED>
+		<!ELEMENT nombreEstrella (#PCDATA)>
+                <!ELEMENT objetos (cumulosEstrellas,nebulosas,galaxias,cuasares,lluviaMeteoritos*)>
+                <!ELEMENT cumulosEstrellas (#PCDATA)>
+                <!ELEMENT nebulosas (#PCDATA)>
+                <!ELEMENT galaxias (#PCDATA)>
+                <!ELEMENT cuasares (#PCDATA)>
+	 	<!ELEMENT lluviaMeteoritos (#PCDATA)>
+ 		<!ELEMENT colindantes (nombre)+>
+                <!ELEMENT observacion (hemisferio,mes,hora)>
+                <!ELEMENT hemisferio (#PCDATA)>
+                <!ELEMENT mes (#PCDATA)>
+                <!ELEMENT hora (#PCDATA)>
+		<!ELEMENT estrella (nombre,constelacion,distancia,luminosidad,temperatura,masa)>
+                <!ELEMENT distancia (#PCDATA)>
+                <!ATTLIST distancia
+                            medida CDATA #REQUIRED>
+                 <!ELEMENT luminosidad (#PCDATA)>
+                 <!ATTLIST luminosidad
+                            medida CDATA #FIXED 'soles'>
+<!--Valor fijo --> 
+                <!ELEMENT temperatura (#PCDATA)>
+                <!ATTLIST temperatura
+                            medida CDATA 'K'>
+                <!ELEMENT masa (#PCDATA)>
+                <!ATTLIST masa
+                        medida CDATA 'soles'>
+<!--Valor opcional --> 
+]>
+
+
+<mapaestelar xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+             xsi:noNamespaceSchemaLocation='04.xsd'>
+    <constelacion nombreLatin="Ursa Maior">
+        <nombre>La Osa Mayor</nombre>
+        <superficie>1279,7</superficie>
+        <estrellas num="209">
+            <asterismo>7</asterismo>
+            <masBrillante luminosidad="108">
+                <nombreEstrella>Allioth</nombreEstrella>
+            </masBrillante>
+        </estrellas>
+        <objetos>
+            <cumulosEstrellas>false</cumulosEstrellas>
+            <nebulosas>true</nebulosas>
+            <galaxias>true</galaxias>
+            <cuasares>false</cuasares>
+            <lluviaMeteoritos>Kappa Ursa Mayoridas</lluviaMeteoritos>
+            <lluviaMeteoritos>Lambda Ursa Mayoridas</lluviaMeteoritos>
+            <lluviaMeteoritos>Psi Ursa Mayoridas</lluviaMeteoritos>
+            <lluviaMeteoritos>Ursa Mayoridas de octubre</lluviaMeteoritos>
+        </objetos>
+        <colindantes>
+            <nombre>Bootes</nombre>  
+            <nombre>Camelopardalis</nombre> 
+            <nombre>Canes Venatici</nombre>
+            <nombre>Draco</nombre>
+            <nombre>Leo</nombre>
+            <nombre>Leo Minor</nombre>
+            <nombre>Lynx</nombre>
+        </colindantes>
+        <observacion>
+            <hemisferio>Norte</hemisferio>
+            <mes>--04</mes>
+            <hora>21:00:00</hora>
+        </observacion>
+    </constelacion>
+    <estrella>
+        <nombre>Allioth</nombre>
+        <constelacion>Osa Mayor</constelacion>
+        <distancia medida="anyosluz">81±1</distancia>
+        <luminosidad medida="soles">108</luminosidad>
+        <temperatura medida="K">9400</temperatura>
+        <masa medida="soles">3</masa>
+    </estrella>
+</mapaestelar>

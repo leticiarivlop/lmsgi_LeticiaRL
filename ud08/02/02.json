@@ -1,0 +1,46 @@
+{
+    "NombreEquipo": "Los Angeles Lakers",
+    "Colorequipacion": ["Purpura", "oro"],
+    "NombreEstadio": "Crypto.com Arena",
+    "NombreEntrenador": "vacante",
+    "IndicadorPlantilla": true,
+    "Paginaweb": "https://www.nba.com/lakers",
+    "Base": [
+        {
+            "Nombre": "Russell Westbrook",
+            "Dorsal": 0
+        },
+        {
+            "Nombre": "Kendrick Nunn",
+            "Dorsal": 12
+        },
+        {
+            "Nombre": "Mac McClung",
+            "Dorsal": 37
+        }
+    ],
+    "Pivot": [
+        {
+            "Nombre": "Anthony Davis",
+            "Dorsal": 3
+        },
+        {
+            "Nombre": "LeBron James",
+            "Dorsal": 6
+        },
+        {
+            "Nombre": "Dwinght Howard",
+            "Dorsal": 39
+        }
+    ],
+    "Aleros": [
+        {
+            "Nombre": "Kent Bazemore",
+            "Dorsal": 9
+        },
+        {
+            "Nombre": "T.Horton-Tuck",
+            "Dorsal": 5
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+<table>
+  <thead>
+    <tr>
+      <th>TITULO</th>
+      <th>AUTOR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Everyday Italian</td>
+      <td>Giada De Laurentiis</td>
+    </tr>
+    <tr>
+      <td>Harry Potter</td>
+      <td>J K. Rowling</td>
+    </tr>
+    <tr>
+      <td>XQuery Kick Start</td>
+      <td>James McGovernPer BothnerKurt CagleJames LinnVaidyanathan Nagarajan</td>
+    </tr>
+    <tr>
+      <td>Learning XML</td>
+      <td>Erik T. Ray</td>
+    </tr>
+  </tbody>
+</table>

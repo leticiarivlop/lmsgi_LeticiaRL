@@ -1,0 +1,74 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 abr. 2022, 10:34:25
+    Author     : daw1
+*/
+body{
+     width: 100%;
+    margin: 0 auto;
+    background-image: url("../03/images/pelicula1.jpg");
+    background-repeat: repeat;
+}
+footer {
+    text-align: center;
+    background-color: grey;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size:18px;
+    font-weight: bold;
+    color:white;
+}
+footer p{
+    padding-bottom: 10px;
+}
+h1{
+    background-color: grey;
+    color: #ffffff;
+    text-align: center;
+}
+#grande{
+    size: 300px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    border:1px;
+    margin-right:60px;
+    margin-left: 70px;
+}
+.pequeno{
+    padding: 10px;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    border:1px;
+    border-color: black;
+    border-style: solid;
+    width: 30%;
+    margin-bottom: 1%;
+    display: inline-block;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+}
+.Alta{
+    color: green;
+}
+.Media{
+    color: yellow;
+}
+.Bajo{
+    color: red;
+}
