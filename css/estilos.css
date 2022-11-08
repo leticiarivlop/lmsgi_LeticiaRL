@@ -256,7 +256,7 @@ strong{
     border: 3px double #00d4ff;
     align-items: center;
     position: relative;}
-  .boton_1:hover{
+  .boton_1:after{
     opacity: 0.6;
     text-decoration: none;
   }
